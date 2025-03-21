@@ -22,6 +22,7 @@ public class TrashSort{
             System.out.print(n + " ");
         }
         System.out.println();
+        System.out.println();
         Scanner s = new Scanner(System.in);
         trash = s.nextLine();
 
