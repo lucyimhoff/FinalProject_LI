@@ -4,11 +4,24 @@ import java.util.Scanner;
 public class TrashSort{
     private String[] brownBin = {"Fruit Peel", "Food Scraps", "Paper Towel", "Napkin", "Tea Bag" , "Flower"};
     private String[] blueBin = {"Can", "Bottle", "Jar", "Carton", "Aluminum Foil" , "Container"};
-    private String[] blackBin;
+    private String[] blackBin = {"Plastic Bag", "Wrapper", "Dirty Napkin", "Styrofoam"};
     private String trash = "";
 
     public void ask(){
         System.out.println("What are you trying to sort:");
+        System.out.println("Please Select From This List:");
+        for(String n : brownBin){
+            System.out.print(n + " ");
+        }
+        System.out.println();
+        for(String n : blueBin){
+            System.out.print(n + " ");
+        }
+        System.out.println();
+        for(String n : blackBin){
+            System.out.print(n + " ");
+        }
+        System.out.println();
         Scanner s = new Scanner(System.in);
         trash = s.nextLine();
 
@@ -22,7 +35,13 @@ public class TrashSort{
                 if(blueBin[i].equals(trash)) return "Blue Bin";
 
         }
-        return "IDK";
+        for(int i = 0; i < blackBin.length; i++){
+            if(blackBin[i].equals(trash)) return "Black Bin";
+
+    }
+        
+    
+        return "Landfill";
     }
 
     
