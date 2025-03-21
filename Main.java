@@ -1,6 +1,9 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 public class Main{
-    publc static void main(String arg[]){
+    public static void main(String arg[]){
+        TrashSort test1 = new TrashSort();
+        System.out.println(test1.sort());
         
     }
 }
