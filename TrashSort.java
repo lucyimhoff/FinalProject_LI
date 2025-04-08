@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class TrashSort{
@@ -28,6 +27,8 @@ public class TrashSort{
 
     }
 
+    
+
     public String sort(){
         this.ask();
         for(int i = 0; i < brownBin.length; i++){
@@ -41,8 +42,9 @@ public class TrashSort{
 
     }
         
-    
-        return "Landfill";
+        Questions n = new Questions();
+        return(n.unknown());
+
     }
 
     
