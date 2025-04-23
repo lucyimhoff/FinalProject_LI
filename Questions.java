@@ -8,20 +8,19 @@ public class Questions{
         if(result.equals("1")){
             System.out.println("Is it hard or soft plastic?");
             result = s.nextLine();
-            if(result.equals("hard")
+            if(result.equals("hard")){
                 return "Blue Bin";
             }
-            if(result == "soft"){
+            if(result.equals("soft")){
                 return "LandFill";
-            }
-        }
+            }}
         if(result.equals("2")){
             System.out.println("Is the food soiled or dirty? 1. Yes 2. No");
             result = s.nextLine();
             if(result == "2"){
                 return("Paper Bin or Brown Bin");
             }
-            if(result == "1"){
+            if(result.equals("1")){
                 return("Brown Bin");
             }
 
