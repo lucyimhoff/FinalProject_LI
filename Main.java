@@ -1,6 +1,6 @@
-import java.awt.Canvas;
-import java.awt.Graphics;
-import javax.swing.JFrame;
+//import java.awt.Canvas;
+//import java.awt.Graphics;
+//import javax.swing.JFrame;   //from trinket and Stack OverFlow
 
 
 public class Main{
@@ -8,18 +8,15 @@ public class Main{
         TrashSort test1 = new TrashSort();
         System.out.println(test1.sort());
         //JFrame frame = new JFrame("Background.png");
-        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //Canvas canvas = new Drawing();
-        //canvas.setSize(400,400);
-        //frame.add(canvas);
+       // canvas.setSize(400,400);
+       // frame.add(canvas);
        // frame.pack();
-        //frame.setVisible(true);
-
-
-
+       // frame.setVisible(true); //from trinket
     }
 
-   // public void paint(Graphics g){
-      //  g.fillOval(100,100,200,200);
+   //public void paint(Graphics g){
+     // g.fillOval(100,100,200,200); //from trinket
    // }
 }
