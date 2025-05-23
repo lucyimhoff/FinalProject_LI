@@ -40,14 +40,14 @@ public class TrashSort{
         for(int i = 0; i < blueBin.length; i++){
                 if(blueBin[i].equals(trash)) {
                     bin = "Blue";
-                    return "Blue Bin";
+                    return new Bin("Blue");
                 }
 
         }
         for(int i = 0; i < blackBin.length; i++){
             if(blackBin[i].equals(trash)) {
                 bin = "Black";
-                return "Black Bin";
+                return new Bin("Black");
             }
 
     }
