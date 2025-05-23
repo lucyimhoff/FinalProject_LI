@@ -11,6 +11,21 @@ public class Drawing extends Canvas {
         if (draw.getColor().equals("Blue")) {
             g.setColor(Color.BLUE);
             g.fillRoundRect(100, 100, 200, 300, 50, 50); //from trinket
+            System.out.println("Please throw your item away in the Blue bin");
+
+        }
+        if (draw.getColor().equals("Brown")) {
+            g.setColor(Color.getHSBColor(30, 100, 80));
+            g.fillRoundRect(100, 100, 200, 300, 50, 50); //from trinket
+            System.out.println("Please throw your item away in the Brown bin");
+
+        }
+
+        if (draw.getColor().equals("Black")) {
+            g.setColor(Color.black);
+            g.fillRoundRect(100, 100, 200, 300, 50, 50); //from trinket
+            System.out.println("Please throw your item away in the Black bin");
+
         }
     }
 }
