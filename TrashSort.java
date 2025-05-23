@@ -5,6 +5,7 @@ public class TrashSort{
     private String[] blueBin = {"Can", "Bottle", "Jar", "Carton", "Aluminum Foil" , "Container"};
     private String[] blackBin = {"Plastic Bag", "Wrapper", "Dirty Napkin", "Styrofoam"};
     private String trash = "";
+    private String bin;
 
     public void ask(){
         System.out.println("What are you trying to sort:");
@@ -29,22 +30,34 @@ public class TrashSort{
 
     
 
-    public String sort(){
+    public Bin sort(){
         this.ask();
         for(int i = 0; i < brownBin.length; i++){
-            if(brownBin[i].equals(trash)) return "Brown Bin"; }
+            if(brownBin[i].equals(trash)){
+                bin = "Brown";
+                return new Bin("Brown");
+            } }
         for(int i = 0; i < blueBin.length; i++){
-                if(blueBin[i].equals(trash)) return "Blue Bin";
+                if(blueBin[i].equals(trash)) {
+                    bin = "Blue";
+                    return "Blue Bin";
+                }
 
         }
         for(int i = 0; i < blackBin.length; i++){
-            if(blackBin[i].equals(trash)) return "Black Bin";
+            if(blackBin[i].equals(trash)) {
+                bin = "Black";
+                return "Black Bin";
+            }
 
     }
         
         Questions n = new Questions();
         return(n.unknown());
 
+    }
+    public String getBin(){
+        return bin;
     }
 
     
