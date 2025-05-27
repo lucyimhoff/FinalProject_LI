@@ -15,7 +15,7 @@ public class Drawing extends Canvas {
 
         }
         if (draw.getColor().equals("Brown")) {
-            g.setColor(Color.getHSBColor(30, 100, 80));
+            g.setColor(Color.getHSBColor(30 / 360f, 0.6f, 0.5f));
             g.fillRoundRect(100, 100, 200, 300, 50, 50); //from trinket
             System.out.println("Please throw your item away in the Brown bin");
 
